@@ -1,14 +1,15 @@
 
-class Booking:
+class Contact:
     def add(self, name, number):
         self.numbers[name] = number
     pass
+
     def __init__(self):
         self.numbers = {}
-    #def lookup(self, name):
-    #    return self.numbers[name]
+
     def lookup(self, name):
         return self.numbers[name]
+
     def is_consistent(self):
         for name1, number1 in self.numbers.items():
             for name2, number2 in self.numbers.items():
