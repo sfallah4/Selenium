@@ -14,3 +14,5 @@ class ContactTest(unittest.TestCase):
     def test_missing_name_raises_error(self):
         with self.assertRaises(KeyError):
             self.contacts.lookup("missing")
+    def test_empty_contacts_is_consistent(self):
+        self.assertTrue(self.contacts.is_consistent())
