@@ -11,3 +11,6 @@ class ContactTest(unittest.TestCase):
         self.contacts.add("Fallah", "0700433078")
         number = self.contacts.lookup("Fallah")
         self.assertEqual("0700433078", number)
+    def test_missing_name_raises_error(self):
+        with self.assertRaises(KeyError):
+            self.contacts.lookup("missing")
