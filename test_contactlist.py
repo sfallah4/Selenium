@@ -7,12 +7,3 @@ class ContactTest(unittest.TestCase):
         self.contacts.add("Sofia", "0700433078")
         number = self.contacts.lookup("Sofia")
         self.assertEqual("0700433078", number)
-    def test_lookup_by_lastname(self):
-        self.contacts.add("Fallah", "0700433078")
-        number = self.contacts.lookup("Fallah")
-        self.assertEqual("0700433078", number)
-    def test_missing_name_raises_error(self):
-        with self.assertRaises(KeyError):
-            self.contacts.lookup("missing")
-    def test_empty_contacts_is_consistent(self):
-        self.assertTrue(self.contacts.is_consistent())
