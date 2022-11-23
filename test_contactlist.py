@@ -16,3 +16,7 @@ class ContactTest(unittest.TestCase):
             self.contacts.lookup("missing")
     def test_empty_contacts_is_consistent(self):
         self.assertTrue(self.contacts.is_consistent())
+
+    def test_is_consistent_with_address(self):
+        self.contacts.add("Sofia", "Nybohovsbacken 99")
+        self.assertTrue(self.contacts.is_consistent())
