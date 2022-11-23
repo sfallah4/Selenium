@@ -23,3 +23,7 @@ class ContactTest(unittest.TestCase):
     def test_is_consistent_with_email(self):
         self.contacts.add("Sofia", "sofia.fallah@iths.se")
         self.assertTrue(self.contacts.is_consistent())
+    def test_is_consistent_with_different_entries(self):
+        self.contacts.add("Sofia", "0700433078")
+        self.contacts.add("Elena", "0720433078")
+        self.assertTrue(self.contacts.is_consistent())
