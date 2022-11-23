@@ -20,3 +20,6 @@ class ContactTest(unittest.TestCase):
     def test_is_consistent_with_address(self):
         self.contacts.add("Sofia", "Nybohovsbacken 99")
         self.assertTrue(self.contacts.is_consistent())
+    def test_is_consistent_with_email(self):
+        self.contacts.add("Sofia", "sofia.fallah@iths.se")
+        self.assertTrue(self.contacts.is_consistent())
