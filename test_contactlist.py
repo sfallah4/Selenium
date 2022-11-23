@@ -27,3 +27,7 @@ class ContactTest(unittest.TestCase):
         self.contacts.add("Sofia", "0700433078")
         self.contacts.add("Elena", "0720433078")
         self.assertTrue(self.contacts.is_consistent())
+    def test_inconsistent_with_duplicate_entries(self):
+        self.contacts.add("Sofia", "0700433078")
+        self.contacts.add("Eva", "0700433078")
+        self.assertFalse(self.contacts.is_consistent())
