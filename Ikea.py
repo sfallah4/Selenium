@@ -2,22 +2,57 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 chromeOptions = Options()
 chromeOptions.add_argument("--kiosk")
 
 driver=webdriver.Chrome(options=chromeOptions)
-driver.get("https://www.ikea.com/se/sv/")
+driver.get("https://sv-se.facebook.com/r.php?locale=sv_SE&display=page")
 
-ele = driver.find_element(By.NAME, "q")
+ele = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.NAME, "firstname")))
+
+first_name = driver.find_element(By.NAME, "firstname")
+first_name.clear()
+first_name.send_keys("Sofia")
+last_name = driver.find_element(By.NAME, "lastname")
+last_name.clear()
+last_name.send_keys("Fallah")
+email = driver.find_element(By.NAME, "reg_email__")
+email.clear()
+email.send_keys("sofia.fallah@iths.se")
+new_pass = driver.find_element(By.NAME, "password_step_input")
+new_pass.clear()
+new_pass.send_keys("Sofia6738!")
 time.sleep(2)
-ele.clear()
-ele.send_keys("matta")
-ele.send_keys(Keys.RETURN)
+day_element = driver.find_element_by_xpath("//select@aria-label='Dag'")
+all_options = day_element.find_elements_by_tag_name("option")
+for option in all_options:
+    if option.get.attribute("value") == "4":
+        option.click()
+month_element = driver.find_element_by_xpath("//select@aria-label='Månad'")
+all_options = month_element.find_elements_by_tag_name("option")
+for option in all_options:
+    if option.get.attribute("value") == "nov":
+        option.click()
+year_element = driver.find_element_by_xpath("//select@aria-label=''År'")
+all_options = year_element.find_elements_by_tag_name("option")
+for option in all_options:
+    if option.get.attribute("value") == "1989":
+        option.click()
+time.sleep(1)
+checkbox = driver.find_element_by_xpath("//label(@class='_58mt')")
+checkbox.click()
 
-ele_link = driver.find_element(By.LINK_TEXT, "stoense")
+submit_ele = driver.find_element_by_xpath("button(@type='submit')")
+
+name = driver.find_element(By.NAME, "q")
 time.sleep(2)
-ele_link.click()
+name.clear()
+name.send_keys("matta")
+name.send_keys(Keys.RETURN)
 
-driver.close()
+driver.quit()
