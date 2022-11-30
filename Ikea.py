@@ -24,35 +24,42 @@ last_name.send_keys("Fallah")
 email = driver.find_element(By.NAME, "reg_email__")
 email.clear()
 email.send_keys("sofia.fallah@iths.se")
+conf_email = driver.find_element(By.NAME, "reg_email_confirmation__")
+conf_email.clear()
+conf_email.send_keys("sofia.fallah@iths.se")
 new_pass = driver.find_element(By.NAME, "reg_passwd__")
 new_pass.clear()
 new_pass.send_keys("Sofia6738!")
 time.sleep(2)
 day_element = driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
-all_options = day_element.find_elements(By.NAME, "option")
+all_options = day_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
-    if option.get.attribute("value") == "4":
+    if option.get_attribute("value") == "4":
         option.click()
-month_element = driver.find_element(By.XPATH,"//select[@aria-label='Månad']")
-all_options = month_element.find_elements(By.NAME, "option")
+time.sleep(2)
+month_element = driver.find_element(By.XPATH, "//select[@aria-label='Månad']")
+all_options = month_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
-    if option.get.attribute("value") == "nov":
+    if option.get_attribute("value") == "nov":
         option.click()
+time.sleep(2)
 year_element = driver.find_element(By.XPATH, "//select[@aria-label='År']")
-all_options = year_element.find_elements(By.NAME, "option")
+all_options = year_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
-    if option.get.attribute("value") == "1989":
+    if option.get_attribute("value") == "1989":
         option.click()
 time.sleep(1)
-checkbox = driver.find_element_by_xpath("//label(@class='_58mt')")
+checkbox = driver.find_element(By.XPATH, "//label[@class='_58mt']")
 checkbox.click()
 
-submit_ele = driver.find_element_by_xpath("button(@type='submit')")
-
-name = driver.find_element(By.NAME, "q")
+submit_ele = driver.find_element(By.XPATH, "//button[@type='submit']")
 time.sleep(2)
-name.clear()
-name.send_keys("matta")
-name.send_keys(Keys.RETURN)
+submit_ele.click()
+
+#name = driver.find_element(By.NAME, "q")
+#time.sleep(2)
+#name.clear()
+#name.send_keys("matta")
+#name.send_keys(Keys.RETURN)
 
 driver.quit()
