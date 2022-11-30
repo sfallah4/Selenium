@@ -24,22 +24,22 @@ last_name.send_keys("Fallah")
 email = driver.find_element(By.NAME, "reg_email__")
 email.clear()
 email.send_keys("sofia.fallah@iths.se")
-new_pass = driver.find_element(By.NAME, "password_step_input")
+new_pass = driver.find_element(By.NAME, "reg_passwd__")
 new_pass.clear()
 new_pass.send_keys("Sofia6738!")
 time.sleep(2)
-day_element = driver.find_element_by_xpath("//select@aria-label='Dag'")
-all_options = day_element.find_elements_by_tag_name("option")
+day_element = driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
+all_options = day_element.find_elements(By.NAME, "option")
 for option in all_options:
     if option.get.attribute("value") == "4":
         option.click()
-month_element = driver.find_element_by_xpath("//select@aria-label='Månad'")
-all_options = month_element.find_elements_by_tag_name("option")
+month_element = driver.find_element(By.XPATH,"//select[@aria-label='Månad']")
+all_options = month_element.find_elements(By.NAME, "option")
 for option in all_options:
     if option.get.attribute("value") == "nov":
         option.click()
-year_element = driver.find_element_by_xpath("//select@aria-label=''År'")
-all_options = year_element.find_elements_by_tag_name("option")
+year_element = driver.find_element(By.XPATH, "//select[@aria-label='År']")
+all_options = year_element.find_elements(By.NAME, "option")
 for option in all_options:
     if option.get.attribute("value") == "1989":
         option.click()
