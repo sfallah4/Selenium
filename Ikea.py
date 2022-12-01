@@ -14,7 +14,7 @@ driver.get("https://sv-se.facebook.com/r.php?locale=sv_SE&display=page")
 
 ele = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//button[@data-testid="cookie-policy-manage-dialog-accept-button"]'))).click();
-time.sleep(5)
+time.sleep(1)
 
 first_name = driver.find_element(By.NAME, "firstname")
 first_name.clear()
@@ -45,7 +45,7 @@ time.sleep(1)
 month_element = driver.find_element(By.XPATH, "//select[@aria-label='Månad']")
 all_options = month_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
-    if option.get_attribute("value") == "nov":
+    if option.get_attribute("value") == "11":
         option.click()
 time.sleep(1)
 year_element = driver.find_element(By.XPATH, "//select[@aria-label='År']")
@@ -53,12 +53,12 @@ all_options = year_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
     if option.get_attribute("value") == "1989":
         option.click()
-time.sleep(1)
+
 checkbox = driver.find_element(By.XPATH, "//label[@class='_58mt']")
 checkbox.click()
 
 submit_ele = driver.find_element(By.XPATH, "//button[@type='submit']").click();
-time.sleep(10)
+time.sleep(5)
 #submit_ele.click()
 
 #name = driver.find_element(By.NAME, "q")
