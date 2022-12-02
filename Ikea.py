@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,7 +8,7 @@ import time
 chromeOptions = Options()
 chromeOptions.add_argument("--kiosk")
 
-driver=webdriver.Chrome(options=chromeOptions)
+driver = webdriver.Chrome(options=chromeOptions)
 driver.get("https://sv-se.facebook.com/r.php?locale=sv_SE&display=page")
 
 ele = WebDriverWait(driver, 10).until(
@@ -58,13 +57,6 @@ checkbox = driver.find_element(By.XPATH, "//label[@class='_58mt']")
 checkbox.click()
 
 submit_ele = driver.find_element(By.XPATH, "//button[@type='submit']").click();
-time.sleep(5)
-#submit_ele.click()
-
-#name = driver.find_element(By.NAME, "q")
-#time.sleep(2)
-#name.clear()
-#name.send_keys("matta")
-#name.send_keys(Keys.RETURN)
-
+time.sleep(10)
+driver.delete_all_cookies()
 driver.quit()
