@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc259570-6b76-4638-976f-2bf11eb024fa" name="Changes" comment="add asserts" />
+    <list default="true" id="fc259570-6b76-4638-976f-2bf11eb024fa" name="Changes" comment="add asserts">
+      <change beforePath="$PROJECT_DIR$/.idea/PyCharmprojects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyCharmprojects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +41,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2HhKthIaa5yQeO99H4efkgke0TG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/sofiiafa/PyCharmprojects",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -335,7 +344,13 @@
       <option name="presentableId" value="LOCAL−00027" />
       <updated>1670955329624</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL−00028" summary="add asserts">
+      <created>1670960816199</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1670960816199</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -382,7 +397,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="AgilTestAuto-Uppgift4/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
