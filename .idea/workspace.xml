@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc259570-6b76-4638-976f-2bf11eb024fa" name="Changes" comment="add asserts" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="37ca75e9-ce2e-4b10-9aef-9c04b980460a" />
+        <option name="url" value="https://github.com/Raphy82/AgilTestAuto-Uppgift4.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HhKthIaa5yQeO99H4efkgke0TG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/sofiiafa/PyCharmprojects",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository",
+      "directory"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.facebook">
+    <configuration name="facebook" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/facebook.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_contactlist.BookingTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_contactlist.BookingTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_contactlist.BookingTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_contactlist.BookingTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_contactlist.BookingTest.test_inconsistent_with_duplicate_prefix" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_contactlist.BookingTest.test_inconsistent_with_duplicate_prefix&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_contactlist.BookingTest.test_is_consistent_with_different_entries" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_contactlist.BookingTest.test_is_consistent_with_different_entries&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_contactlist.ContactTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PyCharmprojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_contactlist.ContactTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.facebook" />
+        <item itemvalue="Python tests.Python tests for test_contactlist.ContactTest" />
+        <item itemvalue="Python tests.Python tests for test_contactlist.BookingTest" />
+        <item itemvalue="Python tests.Python tests for test_contactlist.BookingTest.test_inconsistent_with_duplicate_prefix" />
+        <item itemvalue="Python tests.Python tests for test_contactlist.BookingTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc259570-6b76-4638-976f-2bf11eb024fa" name="Changes" comment="" />
+      <created>1668732091443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668732091443</updated>
+    </task>
+    <task id="LOCAL−00001" summary="commit message">
+      <created>1669074472448</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1669074472448</updated>
+    </task>
+    <task id="LOCAL−00002" summary="commit message">
+      <created>1669074558815</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1669074558815</updated>
+    </task>
+    <task id="LOCAL−00003" summary="commit message">
+      <created>1669074602337</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1669074602337</updated>
+    </task>
+    <task id="LOCAL−00004" summary="lookup by firstname">
+      <created>1669120140206</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1669120140206</updated>
+    </task>
+    <task id="LOCAL−00005" summary="lookup by lastname">
+      <created>1669120187447</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1669120187447</updated>
+    </task>
+    <task id="LOCAL−00006" summary="when missing name in the list raises error">
+      <created>1669120235752</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1669120235752</updated>
+    </task>
+    <task id="LOCAL−00007" summary="when empty contacts in the contactlist is consistent">
+      <created>1669144091097</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1669144091097</updated>
+    </task>
+    <task id="LOCAL−00008" summary="the test is consistent with address">
+      <created>1669221557200</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1669221557200</updated>
+    </task>
+    <task id="LOCAL−00009" summary="the test is consistent with email address">
+      <created>1669221592204</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1669221592204</updated>
+    </task>
+    <task id="LOCAL−00010" summary="the test is consistent with different entries">
+      <created>1669221630603</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1669221630603</updated>
+    </task>
+    <task id="LOCAL−00011" summary="the test is consistent with duplicate entries">
+      <created>1669221668038</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1669221668038</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Opening a webpage with webDriver">
+      <created>1669681079625</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1669681079625</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Opening a webpage with webDriver">
+      <created>1669823750521</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1669823750521</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Opening a webpage with webDriver">
+      <created>1669828597313</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1669828597313</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Opening a webpage with webDriver">
+      <created>1669848474349</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1669848474349</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Opening a webpage with webDriver">
+      <created>1669849906902</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1669849906902</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Opening a webpage with webDriver">
+      <created>1669851752178</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1669851752178</updated>
+    </task>
+    <task id="LOCAL−00018" summary="Opening a webpage with webDriver">
+      <created>1669853835967</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1669853835967</updated>
+    </task>
+    <task id="LOCAL−00019" summary="Opening a webpage with webDriver. adding time.sleep">
+      <created>1669922290420</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1669922290420</updated>
+    </task>
+    <task id="LOCAL−00020" summary="Opening a webpage with webDriver. adding value">
+      <created>1669928106836</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1669928106836</updated>
+    </task>
+    <task id="LOCAL−00021" summary="Opening a webpage with webDriver. adding delete cookies">
+      <created>1669982575910</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1669982575910</updated>
+    </task>
+    <task id="LOCAL−00022" summary="rename repository">
+      <created>1670230596466</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1670230596466</updated>
+    </task>
+    <task id="LOCAL−00023" summary="new repository">
+      <created>1670944134222</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1670944134222</updated>
+    </task>
+    <task id="LOCAL−00024" summary="add test login">
+      <created>1670945148424</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1670945148424</updated>
+    </task>
+    <task id="LOCAL−00025" summary="add test login">
+      <created>1670945191222</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1670945191222</updated>
+    </task>
+    <task id="LOCAL−00026" summary="add asserts">
+      <created>1670953898322</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1670953898322</updated>
+    </task>
+    <task id="LOCAL−00027" summary="add asserts">
+      <created>1670955329624</created>
+      <option name="number" value="LOCAL−00027" />
+      <option name="presentableId" value="LOCAL−00027" />
+      <updated>1670955329624</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="583fefa9-d0aa-480a-b76d-91dbaf012add">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="AgilTestAuto-Uppgift4/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/PyCharmprojects" />
+    </ignored-roots>
+    <MESSAGE value="commit message" />
+    <MESSAGE value="lookup by firstname" />
+    <MESSAGE value="lookup by lastname" />
+    <MESSAGE value="when missing name in the list raises error" />
+    <MESSAGE value="when empty contacts in the contactlist is consistent" />
+    <MESSAGE value="the test is consistent with address" />
+    <MESSAGE value="the test is consistent with email address" />
+    <MESSAGE value="the test is consistent with different entries" />
+    <MESSAGE value="the test is consistent with duplicate entries" />
+    <MESSAGE value="Opening a webpage with webDriver" />
+    <MESSAGE value="Opening a webpage with webDriver. adding time.sleep" />
+    <MESSAGE value="Opening a webpage with webDriver. adding value" />
+    <MESSAGE value="Opening a webpage with webDriver. adding delete cookies" />
+    <MESSAGE value="rename repository" />
+    <MESSAGE value="new repository" />
+    <MESSAGE value="add test login" />
+    <MESSAGE value="add asserts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add asserts" />
+  </component>
+</project>
