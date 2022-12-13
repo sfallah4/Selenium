@@ -31,15 +31,34 @@ time.sleep(1)
 last_name = driver.find_element(By.NAME, "lastname")
 last_name.clear()
 last_name.send_keys("Fallah")
+def test_lookup_by_lastname(self):
+    self.logins.add("Fallah", "sofia.fallah@iths.se")
+    login = self.logins.lookup("Fallah")
+    self.assertEqual("sofia.fallah@iths.se", login)
 time.sleep(1)
 email = driver.find_element(By.NAME, "reg_email__")
 email.clear()
 email.send_keys("sofia.fallah@iths.se")
+def test_lookup_by_email(self):
+    self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
+    login = self.logins.lookup("sofia.fallah@iths.se")
+    self.assertEqual("sofia.fallah@iths.se", login)
 time.sleep(1)
 conf_email = driver.find_element(By.NAME, "reg_email_confirmation__")
 conf_email.clear()
 conf_email.send_keys("sofia.fallah@iths.se")
+def test_lookup_by_confemail(self):
+    self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
+    login = self.logins.lookup("sofia.fallah@iths.se")
+    self.assertEqual("sofia.fallah@iths.se", login)
 time.sleep(1)
+def test_missing_name_raises_error(self):
+    with self.assertRaises(KeyError):
+        self.logins.lookup("missing")
+
+    def test_empty_logins_is_consistent(self):
+        self.assertTrue(self.logins.is_consistent())
+
 new_pass = driver.find_element(By.NAME, "reg_passwd__")
 new_pass.clear()
 new_pass.send_keys("Sofia6738!")
