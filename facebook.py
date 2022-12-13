@@ -1,10 +1,15 @@
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from logins import Login
 import time
 
+class LoginTest(unittest.TestCase):
+    def setUp(self):
+        self.logins = Login()
 chromeOptions = Options()
 chromeOptions.add_argument("--kiosk")
 
@@ -18,6 +23,10 @@ time.sleep(1)
 first_name = driver.find_element(By.NAME, "firstname")
 first_name.clear()
 first_name.send_keys("Sofia")
+def test_lookup_by_firstname(self):
+    self.logins.add("Sofia", "sofia.fallah@iths.se")
+    login = self.logins.lookup("Sofia")
+    self.assertEqual("sofia.fallah@iths.se", login)
 time.sleep(1)
 last_name = driver.find_element(By.NAME, "lastname")
 last_name.clear()
