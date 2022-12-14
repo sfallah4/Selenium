@@ -41,7 +41,7 @@ last_name.clear()
 last_name.send_keys("Fallah")
 
 
-def test_lookup_by_lastname(self):
+def test_last_name(self):
     self.logins.add("Fallah", "sofia.fallah@iths.se")
     login = self.logins.lookup("Fallah")
     self.assertEqual("sofia.fallah@iths.se", login)
@@ -53,7 +53,7 @@ email.clear()
 email.send_keys("sofia.fallah@iths.se")
 
 
-def test_lookup_by_email(self):
+def test_email(self):
     self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
     login = self.logins.lookup("sofia.fallah@iths.se")
     self.assertEqual("sofia.fallah@iths.se", login)
@@ -65,7 +65,7 @@ conf_email.clear()
 conf_email.send_keys("sofia.fallah@iths.se")
 
 
-def test_lookup_by_conf_email(self):
+def test_conf_email(self):
     self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
     login = self.logins.lookup("sofia.fallah@iths.se")
     self.assertEqual("sofia.fallah@iths.se", login)
