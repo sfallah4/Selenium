@@ -23,12 +23,13 @@ ele = WebDriverWait(driver, 10).until(
  EC.element_to_be_clickable((By.XPATH, '//button[@data-testid="cookie-policy-manage-dialog-accept-button"]'))).click();
 time.sleep(1)
 
+
 first_name = driver.find_element(By.NAME, "firstname")
 first_name.clear()
 first_name.send_keys("Sofia")
 
 
-def test_lookup_by_firstname(self):
+def test_first_name(self):
     self.logins.add("Sofia", "sofia.fallah@iths.se")
     login = self.logins.lookup("Sofia")
     self.assertEqual("sofia.fallah@iths.se", login)
@@ -82,6 +83,8 @@ new_pass = driver.find_element(By.NAME, "reg_passwd__")
 new_pass.clear()
 new_pass.send_keys("Sofia6738!")
 time.sleep(1)
+
+
 day_element = driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
 all_options = day_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
