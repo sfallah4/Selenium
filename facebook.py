@@ -85,26 +85,55 @@ new_pass.send_keys("Sofia6738!")
 time.sleep(1)
 
 
+def test_new_pass(self):
+    self.logins.add("Sofia6738!", "sofia.fallah@iths.se")
+    login = self.logins.lookup("Sofia6738!")
+    self.assertEqual("sofia.fallah@iths.se", login)
+
+
 day_element = driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
 all_options = day_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
     if option.get_attribute("value") == "4":
         option.click()
 time.sleep(1)
+
+
+def test_element():
+    assert day_element == all_options
+
+
 month_element = driver.find_element(By.XPATH, "//select[@aria-label='Månad']")
 all_options = month_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
     if option.get_attribute("value") == "11":
         option.click()
 time.sleep(1)
+
+
+def test_element():
+    assert month_element == all_options
+
+
 year_element = driver.find_element(By.XPATH, "//select[@aria-label='År']")
 all_options = year_element.find_elements(By.TAG_NAME, "option")
 for option in all_options:
     if option.get_attribute("value") == "1989":
         option.click()
 
+
+def test_element():
+    assert year_element == all_options
+
+
 checkbox = driver.find_element(By.XPATH, "//label[@class='_58mt']")
 checkbox.click()
+
+
+def test_checkbox(self):
+    checked = self.driver.find_element_by_xpath('//span[contains(text(), "Kvinna")]/parent::span').is_selected()
+    return checked
+
 
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
 time.sleep(10)
