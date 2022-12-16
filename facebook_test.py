@@ -1,13 +1,8 @@
-import pytest
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from telnetlib import EC
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
@@ -26,41 +21,41 @@ class LoginTest:
 
     first_name = driver.find_element(By.NAME, "firstname")
     first_name.clear()
-    first_name.send_keys("Sofiaa")
+    first_name.send_keys("Sofia")
 
     def test_first_name(self):
         first_name = self.driver.find_element(By.NAME, "firstname")
         first_name = first_name.text
-        assert "Sofiaa" in first_name
+        assert "Sofia" in first_name
 
     time.sleep(1)
     last_name = driver.find_element(By.NAME, "lastname")
     last_name.clear()
-    last_name.send_keys("Fallaha")
+    last_name.send_keys("Fallah")
 
     def test_last_name(self):
         last_name = self.driver.find_element(By.NAME, "lastname")
         last_name = last_name.text
-        assert "Fallaha" in last_name
+        assert "Fallah" in last_name
 
     email = driver.find_element(By.NAME, "reg_email__")
     email.clear()
-    email.send_keys("sofiaa.fallaha@iths.se")
+    email.send_keys("sofia.fallah@iths.se")
 
     def test_email(self):
         email = self.driver.find_element(By.NAME, "reg_email__")
         email = email.text
-        assert "sofiaa.fallaha@iths.se" in email
+        assert "sofia.fallah@iths.se" in email
 
     time.sleep(1)
     conf_email = driver.find_element(By.NAME, "reg_email_confirmation__")
     conf_email.clear()
-    conf_email.send_keys("sofiaa.fallaha@iths.se")
+    conf_email.send_keys("sofia.fallah@iths.se")
 
     def conf_email(self):
         conf_email = self.driver.find_element(By.NAME, "reg_email_confirmation__")
         conf_email = conf_email.text
-        assert "sofiaa.fallaha@iths.se" in conf_email
+        assert "sofia.fallah@iths.se" in conf_email
 
     new_pass = driver.find_element(By.NAME, "reg_passwd__")
     new_pass.clear()
