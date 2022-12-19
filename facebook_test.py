@@ -79,7 +79,7 @@ class LoginTest:
             option.click()
         time.sleep(1)
 
-    def test_day_element(self):
+    def test_element(self):
         day_element = self.driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
         assert "4" == day_element
 
@@ -90,7 +90,7 @@ class LoginTest:
             option.click()
         time.sleep(1)
 
-    def test_month_element(self):
+    def test_element(self):
         month_element = self.driver.find_element(By.XPATH, "//select[@aria-label='Månad']")
         assert "11" == month_element
 
@@ -100,7 +100,7 @@ class LoginTest:
         if option.get_attribute("value") == "1989":
             option.click()
 
-    def test_year_element(self):
+    def test_element(self):
         year_element = self.driver.find_element(By.XPATH, "//select[@aria-label='År']")
         assert "1989" == year_element
 
@@ -115,3 +115,4 @@ class LoginTest:
     time.sleep(10)
     driver.delete_all_cookies()
     driver.quit()
+

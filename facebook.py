@@ -38,51 +38,39 @@ class LoginTest:
     last_name.clear()
     last_name.send_keys("Fallah")
 
+    def test_last_name(self):
+        last_name = self.driver.find_element(By.NAME, "lastname")
+        last_name = last_name.text
+        assert "Fallah" in last_name
 
-#    def test_last_name(self):
-#    self.logins.add("Fallah", "sofia.fallah@iths.se")
-#    login = self.logins.lookup("Fallah")
-#        self.assertEqual("sofia.fallah@iths.se", login)
-
-
-#    time.sleep(1)
     email = driver.find_element(By.NAME, "reg_email__")
     email.clear()
     email.send_keys("sofia.fallah@iths.se")
 
-
-#    def test_email(self):
-#    self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
-#    login = self.logins.lookup("sofia.fallah@iths.se")
-#       self.assertEqual("sofia.fallah@iths.se", login)
+    def test_email(self):
+        email = self.driver.find_element(By.NAME, "reg_email__")
+        email = email.text
+        assert "sofia.fallah@iths.se" in email
 
     time.sleep(1)
     conf_email = driver.find_element(By.NAME, "reg_email_confirmation__")
     conf_email.clear()
     conf_email.send_keys("sofia.fallah@iths.se")
 
-
-#    def test_conf_email(self):
- #   self.logins.add("sofia.fallah@iths.se", "sofia.fallah@iths.se")
- #   login = self.logins.lookup("sofia.fallah@iths.se")
-#      self.assertEqual("sofia.fallah@iths.se", login)
-
-    time.sleep(1)
-
-#    def test_missing_name_raises_error(self):
-#        with self.assertRaises(KeyError):
-#        self.logins.lookup("missing")
+    def conf_email(self):
+        conf_email = self.driver.find_element(By.NAME, "reg_email_confirmation__")
+        conf_email = conf_email.text
+        assert "sofia.fallah@iths.se" in conf_email
 
     new_pass = driver.find_element(By.NAME, "reg_passwd__")
     new_pass.clear()
     new_pass.send_keys("Sofia6738!")
     time.sleep(1)
 
-
-#    def test_new_pass(self):
-#    self.logins.add("Sofia6738!", "sofia.fallah@iths.se")
-#    login = self.logins.lookup("Sofia6738!")
-#       self.assertEqual("sofia.fallah@iths.se", login)
+    def test_new_pass(self):
+        new_pass = self.driver.find_element(By.NAME, "reg_passwd__")
+        new_pass = new_pass.text
+        assert "Sofia6738!" in new_pass
 
     day_element = driver.find_element(By.XPATH, "//select[@aria-label='Dag']")
     all_options = day_element.find_elements(By.TAG_NAME, "option")
@@ -127,3 +115,4 @@ class LoginTest:
     time.sleep(10)
     driver.delete_all_cookies()
     driver.quit()
+
